@@ -13,7 +13,7 @@ $(document).ready(function() {
 	function displayAnimals(ani) {
 		console.log("made it here")
 		theAni = ani.replace(/ /g, '+');
-		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + theAni + "&api_key=dc6zaTOxFJmzC+limit=10";
+		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + theAni + "&api_key=dc6zaTOxFJmzC+limit=10";
 		$.ajax({
 			url: queryURL,
 			method: "GET"
